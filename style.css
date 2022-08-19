@@ -542,7 +542,7 @@ form{
     justify-content: left;
 
     /* position: relative; */
-  
+  }
 
   .left-contact .left-img{
     height: 50%;
@@ -766,4 +766,4 @@ form{
   line-height: 3.5em;
   font-size: 0.8em;
   }
-  }
+}
