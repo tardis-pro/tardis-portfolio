@@ -6,10 +6,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
+  }
 
 body {
-  background-color: #FCF6F5FF ;    
+  background-color: #FCF6F5FF ;  
+  
+
 }
 
 html {
@@ -19,10 +21,13 @@ html {
 
 .container {
   min-height: 100vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content:center;
+  place-content: top;
+  flex-wrap: wrap;
+  
 }
 
 /* Header section */
@@ -33,7 +38,7 @@ html {
   left:0;
   top:100px;
   width:100vw;
-  height: auto;
+  height: 100%;
   /* -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
@@ -55,6 +60,8 @@ html {
   height: 100%;
   max-width: 1300px;
   padding: 0 10px;
+  flex-wrap: wrap;
+  
 }
 
 #header .navbar .logoname {
@@ -141,8 +148,10 @@ display: flex;
   background-image: url(./img/img23.png);
   background-size: cover;
   background-position: top-center;
-  background-attachment: fixed ;
-  width:100%;
+  background-attachment: fixed;
+  overflow: hidden;
+  width:100vw;
+  height: 100vh;
 }
 
 #main::after {
@@ -150,8 +159,8 @@ display: flex;
     position: absolute;
     left: 0;
     right: 0;
-    height: 100%;
-    width:100%;
+    height: 100vh;
+    width:100vw;
     background-color: whitesmoke;
     opacity: 0.1;
 }
@@ -221,22 +230,22 @@ display: flex;
 /* Second section of services */
 
 #service{
-  background:  
+  /* background:  {
   /* linear-gradient(
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5) */
   /* ),  */ 
-  url(./img/img6.jfif);
-  background-size: cover;
+  /* url(./img/services2.jpg); */
+  background-size: contain;
   background-repeat: no-repeat;
-}
+} */
 
 #service .service{
     flex-direction: column;
     text-align: center;
     max-width: 2000px;
-    margin-top: -80px;
-    padding: 80px 80px;
+    margin-top: -30px;
+    padding: 10px 20px;
 }
 
 #service .service-top {
@@ -261,7 +270,7 @@ display: flex;
 #service .service-top p {
   font-size: 2rem;
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   line-height: 2.23rem;
   font-weight: 700;
 }
@@ -274,15 +283,14 @@ display: flex;
 }
 
 #service .service-item {
-  flex-basis: 20%;
+  flex-basis: 22%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  padding: 40px;
-  border-radius: 10px;
-  /* background-image: url(./img/img4.jpg);
-  background-size: cover; */
+  padding: 20px;
+  background-image: url(./img/img4.jpg);
+  background-size: cover;
   margin-right: 30%;
   position: relative;
   z-index: 1;
@@ -303,8 +311,6 @@ display: flex;
  opacity: 0.4;
  z-index: -1;
 }
-
-
 
 .service-item .icon {
   height: 80px;
@@ -346,7 +352,7 @@ display: flex;
     animation-delay: 1.5s;
     position: relative;
     display: block;
-    width: 20vw;
+    width: auto;
     font-weight: 600;
  }
 
@@ -356,7 +362,7 @@ display: flex;
     animation: 2s ease-in-out infinite;
     animation-delay: 1.5s;
     position: relative;
-    display: block;
+    /* display: block; */
     width: auto;
     margin-top: 20px;
     font-weight: 600;
@@ -364,12 +370,16 @@ display: flex;
  }
 
 
-@media only screen and (min-width: 200px){
+@media only screen and (min-width: 300px){
   #service .service-bottom .service-item{
     flex-basis: 22%;
-    margin: 3.5%;
+    margin: 4%;
+    width: 100%;
   }
-}
+  .desc{
+    height:auto;
+    width: auto;
+}}
 
 /* Project */
 
@@ -380,19 +390,21 @@ display: flex;
     rgba(0, 0, 0, 0.5)
   ), url(./img/img33.jpg);
   background-size: cover;
+  background-attachment: scroll;
 
 }
 #project .project{
+  display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 1900px;
+  max-width: 2000px;
   margin-top: 10px;
-  padding: 80px 80px;
+  padding: 50px 10px;
 }
  
 #project .project-top {
-width: 1000px;
+width: 100%;
 margin: 10px; 
 }
 
@@ -416,11 +428,12 @@ color: blue;
 display: flex;
 align-items: center;
 justify-content: center;
+flex-wrap: wrap;
 }
 
 
 #project .project-item {
-flex-basis: 20%;
+flex-basis: 50%;
 display: flex;
 align-items: flex-start;
 justify-content: center;
@@ -429,10 +442,10 @@ padding: 20px;
 border-radius: 10px;
 background-image: url(./img/img41.jpg);
 background-size: cover;
-margin: 10px 10px 10px 10px;
+margin: 0px ;
 position: relative;
 z-index:1;
-
+flex-wrap: wrap;
 }
 
 #project .project-item::after {
@@ -456,7 +469,7 @@ z-index:1;
  
  }
 
- .service-item .picon img {
+ .project-item .picon img {
   height: 100%;
   width:100%;
   margin: 5px;
@@ -468,10 +481,11 @@ z-index:1;
   color: rgba(55, 63, 94, 0.563) ;
     font-size: 4.33rem;
     position: relative;
-    display: block;
-    width: 250px;
+/* display: block; */
+    width: auto;    
+    /* width: 250px; */
     font-weight: 600;
-    margin-top: 150px;
+    margin-top: 50px;
  }
 
  .pdesc p{
@@ -479,16 +493,17 @@ z-index:1;
     font-size: 1.53rem;
     animation-delay: 1.5s;
     position: relative;
-    display: block;
+    /* display: block; */
+    width: auto;
     margin-top: 15px;
     font-weight: 600;
     line-height: 25px;
  }
 
- @media only screen and (min-width: 200px){
+ @media only screen and (min-width: 300px){
   #project .project-bottom .project-item{
-    flex-basis: 20%;
-    margin: 1.5%;
+    flex-basis: 10%;
+    margin: 2.5%;
   }
 }
 /* Contact section */
@@ -530,39 +545,46 @@ form{
 }
 
 #contact .left-contact{
-  width: 40%;
-  margin:10px;
+  width: 50%;
+  margin: 10px;
+  min-height: 700px;
   position: relative;
   justify-content: left;
   align-items: left;
-  background-image: url(./img/img34.jpg);
-  background-size: none;
+  background-image: url(./img/contact1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    flex-wrap: wrap;
   }
 
   #contact .left-contact .left-img{
-    width: 40%;
+    width: 100%;
     margin:10px;
     position: relative;
     justify-content: left;
-    background-image: url(./img/img34.jpg);
-    background-size: none;
-    }
+    background-attachment: scroll;
+    background-position: top-center;
+  }
 
  #contact .right-contact{
   width: 50%;
-  margin:10px;
+  margin: 20px;
+  margin-right: 50px;
   position: relative;
   justify-content: right;
   align-items: right;
+  flex-direction: right;
 
   }
 
   #contact::after {
   content: "";
   display: block;
-  height: 30px;
+  height: 100px;
   width: 90%;
-  left: 5%;
+  left: 10%;
   bottom: 0;
   position: absolute;
   -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.19);
@@ -591,20 +613,21 @@ form{
   }  */
   #contact article {
     padding: 2em;
-    margin-top: -12px;
+    margin-top: -9px;
   }
 
   #contact article p{
-    align-content: center;
-    margin-bottom: -12px;
+    margin-bottom: -10px;
     font-weight: bold;
+    text-align: center;
+    font-size: 1.53em;
 
   }
 
   #contact h1 {
   background: #195190ff;
   font-family: Oswald ,sans-serif;
-  font-size: 1.75em;
+  font-size: 2.75em;
   padding: 0.6em 0 0.6em 0.4em;
   color: white;
   text-shadow: 0 0.06em 0 #424242;
@@ -620,8 +643,8 @@ form{
   text-align: center;
   display: block;
   width: 100%;
-  height: 40px;
-  margin-top: 20px;
+  height: 50px;
+  margin-top: 30px;
   margin-bottom: 2px;
   cursor: pointer;
   }
@@ -633,12 +656,12 @@ form{
   margin-bottom: 0px;
   }
   .mail {
-  margin-top: 10px;
+  margin-top: 14px;
   font-size: 11px;
   display: inline-block;
   border-top: 2em solid transparent;
   border-left: 2.6em solid #89ABE3;
-  height: 0;
+  height: 10%;
   width: 0;
   position: relative;
   }
@@ -679,13 +702,13 @@ form{
   transition: all linear 1s;
   }
   #checkcontact:checked + .contactform {
-  max-height: 1000px;
+  max-height: 2000px;
   }
   .input_wrapper {
   position: relative;
   }
   .textarea_wrapper textarea {
-  margin-top: 20px;
+  margin: 30px;
   display: block;
   width: 100%;
   background: white;
@@ -703,7 +726,7 @@ form{
   color: #5E5E5E;
   }
   .input_wrapper input[type="text"] {
-  margin-top: 1em;
+  margin-top: 2em;
   display: block;
   width: 100%;
   background: white;
@@ -728,9 +751,6 @@ form{
   text-indent: 0;
   text-align: center;
   box-decoration-break: clone;
-  
-
-
   }
   .input_wrapper label {
   position: absolute;
@@ -745,7 +765,7 @@ form{
   box-sizing: border-box;
   width: 15%;
   text-align: center;
-  line-height: 4.5em;
+  line-height: 2.8em;
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;
   -ms-transition: all 250ms ease;
@@ -756,10 +776,10 @@ form{
   left: 85%;
   }
   .textarea_wrapper textarea {
-  margin-top: 20px;
+  margin-top: 30px;
   display: block;
   width: 100%;
-    min-height:100px;
+  min-height:250px;
   background: white;
   border: 1px solid #DADADA;
   box-shadow: 0 0 1px 0 #E4E4E4;
@@ -786,7 +806,7 @@ form{
   text-align: center;
   display: inline-block;
   width: 40%;
-  height: 50px;
+  height: 60px;
   margin-top: 1em;
   margin-bottom: 9px;
   cursor: pointer;
@@ -809,7 +829,7 @@ form{
   .submit_wrapper input:hover {
   -webkit-box-shadow: 1px 1px 0 0 #195190ff,0px 0px 0 0 #195190ff,0px 0px 0 0 #195190ff;
   box-shadow: 1px 1px 0 0 #195190ff,0px 0px 0 0 #195190ff,0px 0px 0 0 #195190ff;
-  margin-top: 22px;
+  margin-top: 20px;
   margin-left: 2px;
   margin-bottom: 0px;
   }
@@ -817,9 +837,15 @@ form{
   @media (max-width: 500px){
   #contact {
   width: 100%;
+  height:80%;
   }
     .input_wrapper label {
   line-height: 3.5em;
   font-size: 0.8em;
+  width:50%
   }
+  .textarea_wrapper textarea {
+    width:50%
+  }
+
 }
