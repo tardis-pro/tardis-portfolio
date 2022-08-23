@@ -8,12 +8,12 @@ const Navlink = () => {
         <div className="header container">
           <div className="navbar">
             <div className="logoname">
-              <img src="./img/logo.png" alt="" />
+              <img src="tardis\src\Components\img\logo.png" alt="" />
               <a href="#">
-                {" "}
+                
                 <h1>
                   Tard<span>i</span>s Solutions
-                </h1>{" "}
+                </h1>
               </a>
             </div>
             <div className="navlist">
@@ -23,16 +23,16 @@ const Navlink = () => {
                   <a href="#">Home </a>
                 </li>
                 <li>
-                  <a href="#Our Services">Our Services </a>
+                  <a href="#">Our Services </a>
                 </li>
                 <li>
-                  <a href="#Projects"> Projects </a>
+                  <a href="#"> Projects </a>
                 </li>
                 <li>
-                  <a href="#Discover"> Discover</a>
+                  <a href="#"> Discover</a>
                 </li>
                 <li>
-                  <a href="#Contact">Contact </a>
+                  <a href="#">Contact </a>
                 </li>
               </ul>
             </div>

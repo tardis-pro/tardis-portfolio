@@ -30,7 +30,7 @@ const ContactForm = () => {
                   <input
                     type="text"
                     name="contact_nom"
-                    value=""
+                    defaultValue=""
                     id="contact_nom"
                   />
                   <label htmlFor="contact_nom">NAME</label>
@@ -39,7 +39,7 @@ const ContactForm = () => {
                   <input
                     type="text"
                     name="contact_email"
-                    value=""
+                    defaultValue=""
                     id="contact_email"
                   />
                   <label htmlFor="contact_email">EMAIL</label>
@@ -48,7 +48,7 @@ const ContactForm = () => {
                   <input
                     type="text"
                     name="contact_sujet"
-                    value=""
+                    defaultValue=""
                     id="contact_sujet"
                     placeholder="Step on the TARDIS and reach your next step !!"
                   />
@@ -63,8 +63,8 @@ const ContactForm = () => {
                 <p className="submit_wrapper">
                   <input
                     type="submit"
-                    value="CAPITULATE"
-                    placeholder="Step on the TARDIS and reach your next step !!"
+                    defaultValue=""
+                    placeholder="CAPITULATE !!"
                   />
                 </p>
               </form>
