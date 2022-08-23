@@ -1,6 +1,13 @@
 #contact {
   display: flex;
   flex-direction: row;
+  overflow: hidden;
+}
+#contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./img/img34.jpg);
+  background-size: cover;
+  background-attachment: scroll;
 }
 
 #contact .left-contact {

@@ -1,5 +1,10 @@
 import React from "react";
 import "./OurServices.css";
+import web from './img/web.png';
+import app from './img/app.png';
+import graphic from './img/graphic.png';
+import consultant from './img/consultant.png';
+
 
 const OurServices = () => {
   return (
@@ -21,7 +26,7 @@ const OurServices = () => {
             <div className="service-bottom">
               <div className="service-item">
                 <div className="icon">
-                  <img src="./img/web.png" alt="" />
+                 <img src={web} alt="web" />
                 </div>
                 <div className="desc">
                   <h2>Web Development</h2>
@@ -37,7 +42,7 @@ const OurServices = () => {
               </div>
               <div className="service-item">
                 <div className="icon">
-                  <img src="./img/app.png" alt="" />
+                <img src={app} alt="app" />
                 </div>
                 <div className="desc">
                   <h2>App Development</h2>
@@ -53,10 +58,10 @@ const OurServices = () => {
               </div>
               <div className="service-item">
                 <div className="icon">
-                  <img src="./img/graphic.png" alt="" />
+                <img src={graphic} alt="graphic" />
                 </div>
                 <div className="desc">
-                  <h2>Designing</h2>
+                  <h2>Graphic Designing</h2>
                   <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Deleniti porro fugiat ducimus incidunt vitae sequi, nemo
@@ -69,10 +74,10 @@ const OurServices = () => {
               </div>
               <div className="service-item">
                 <div className="icon">
-                  <img src="./img/consultant.png" alt="" />
+                <img src={consultant} alt="consultant" />
                 </div>
                 <div className="desc">
-                  <h2>Consultant</h2>
+                  <h2>Web/App Consultant</h2>
                   <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Deleniti porro fugiat ducimus incidunt vitae sequi, nemo

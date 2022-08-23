@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navlink.css";
+import logo from './img/logo.png';
 
 const Navlink = () => {
   return (
@@ -8,7 +9,8 @@ const Navlink = () => {
         <div className="header container">
           <div className="navbar">
             <div className="logoname">
-              <img src="tardis\src\Components\img\logo.png" alt="" />
+              <img src={logo} alt="Logo" />;
+              {/* <img src="tardis\src\Components\img\logo.png" alt="" /> */}
               <a href="#">
                 
                 <h1>

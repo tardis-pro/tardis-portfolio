@@ -5,11 +5,10 @@ const Main = () => {
   return (
     <div>
       <section id="main">
-      <div className="main container">
-        <div>
-          <h2><span>where anything and everything is possible </span></h2>
+      <div className="container">
+        <h2><span>where anything and everything is possible </span></h2>
           <br />
-          <div className="wavy">
+          {/* <div className="wavy"> */}
             {/* <span style="--i: 1">Y</span>
             <span style="--i: 2">O</span>
             <span style="--i: 3">U</span> &emsp;
@@ -22,8 +21,7 @@ const Main = () => {
             <span style="--i: 10">E</span>&emsp;
             <span style="--i: 11">D</span>
             <span style="--i: 12">O</span> */}
-          </div>
-        </div>
+          {/* </div> */}
       </div>
     </section>
     </div>

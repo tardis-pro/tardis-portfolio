@@ -6,8 +6,11 @@
   justify-content: center;
   place-content: top;
   flex-wrap: wrap;
+  overflow: hidden;
+  
 }
 #main {
+    display: inline-block;
     background-image: url(./img/img23.png);
     background-size: cover;
     background-position: top-center;
@@ -15,6 +18,8 @@
     overflow: hidden;
     width: 100vw;
     height: 100vh;
+    margin-top: -63px;
+
   }
   
   #main::after {
@@ -26,6 +31,7 @@
     width: 100vw;
     background-color: whitesmoke;
     opacity: 0.1;
+    overflow: hidden;
   }
   
   .container h2 {

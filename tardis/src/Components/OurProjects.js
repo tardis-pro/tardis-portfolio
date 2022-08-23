@@ -1,5 +1,6 @@
 import React from "react";
 import "./OurProjects.css";
+import app from './img/app.png';
 
 const OurProjects = () => {
   return (
@@ -16,7 +17,7 @@ const OurProjects = () => {
             <div className="project-bottom">
               <div className="project-item">
                 <div className="picon">
-                  <img src="./img/app.png" alt="" />
+                  <img src={app} alt="app" />;
                 </div>
                 <div className="pdesc">
                   <h2>Project#1</h2>
@@ -32,7 +33,7 @@ const OurProjects = () => {
               </div>
               <div className="project-item">
                 <div className="picon">
-                  <img src="./img/app.png" alt="" />
+                <img src={app} alt="app" />;
                 </div>
                 <div className="pdesc">
                   <h2>Project#2</h2>
@@ -48,7 +49,7 @@ const OurProjects = () => {
               </div>
               <div className="project-item">
                 <div className="picon">
-                  <img src="./img/app.png" alt="" />
+                <img src={app} alt="app" />;
                 </div>
                 <div className="pdesc">
                   <h2>Project#3</h2>
@@ -64,7 +65,7 @@ const OurProjects = () => {
               </div>
               <div className="project-item">
                 <div className="picon">
-                  <img src="./img/app.png" alt="" />
+                <img src={app} alt="app" />;
                 </div>
                 <div className="pdesc">
                   <h2>Project#4</h2>
