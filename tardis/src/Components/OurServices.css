@@ -11,9 +11,9 @@
 }
 
 #service {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.621), rgba(0, 0, 0, 0.621)),
     url(./img/img4.jpg);
-  background-size: cover;
+  background-size: contain;
   background-attachment: scroll;
 }
 #service .service {
@@ -24,18 +24,19 @@
   max-width: 3000px;
   margin-top: -10px;
   padding: 10px 20px;
+  overflow: hidden;
 }
 
 #service .service-top {
   width: 100%;
-  margin: 60px;
+  margin: 10px;
 }
 
 #service .section-title {
   font-size: 4.33rem;
   font-weight: 700;
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   text-align: center;
@@ -49,9 +50,11 @@
 #service .service-top p {
   font-size: 2rem;
   margin-top: 5px;
-  margin-bottom: 0px;
+  margin-bottom: -15px;
   line-height: 2.23rem;
   font-weight: 700;
+  text-align: center;
+  color: #768dc7;
 }
 
 #service .service-bottom {
@@ -62,23 +65,22 @@
 }
 
 #service .service-item {
-  flex-basis: 22%;
-  display: flex;
+  flex-basis: 350px;
+  flex-shrink: 2;
   width: 1500px;
-  height: 500px;
+  height: 400px;
   /* align-items: flex-start; */
   justify-content: center;
   align-content: center;
   flex-direction: column;
   padding: 12px;
-  /* background-image: url(./img/img4.jpg);
-  background-size: cover; */
-  margin: 80px;
+  margin: 9%;
+  margin-top: 6%;
   position: relative;
   z-index: 1;
   flex-wrap: wrap;
   border-radius: 32px;
-  background: linear-gradient(100deg, #20164d 10%, #768dc7 70%);
+  background: linear-gradient(90deg, #37209dbd 30%, #768dc7d0 70%);
   /* background: linear-gradient(145deg, #cacaca, #f0f0f0); */
   /* box-shadow: 11px 11px 18px #9b9b9b, -11px -11px 18px #ffffff; */
   opacity: 0.8;
@@ -110,7 +112,7 @@
 #service .service-item:hover {
   cursor: pointer;
   box-shadow: none;
-  box-shadow: 11px 11px 18px #9b9b9b, -11px -11px 18px #ffffff;
+  box-shadow: 11px 11px 18px #9b9b9b, -11px -11px 18px #ffffffc1;
 }
 
 #service .service-item:hover img {
@@ -137,7 +139,7 @@
   animation-delay: 1.5s;
   position: relative;
   display: inline-flex;
-  top:6%;
+  margin-top: 12%;
   /* left: 20%; */
   width: 80%;
   text-align: center;
@@ -150,9 +152,9 @@
   animation: 2s ease-in-out infinite;
   animation-delay: 1.5s;
   position: relative;
-  display: block;
-  width: 80%;
-  margin: 30px;
+  /* display: block; */
+  width: 100%;
+  margin-top: 12px;
   font-weight: 600;
   line-height: 25px;
   text-align: center;

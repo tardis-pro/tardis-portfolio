@@ -17,12 +17,15 @@
   position: relative;
   justify-content: left;
   align-items: left;
-  background-image: url(./img/contact1.jpg);
+  background: url(./img/contact1.jpg);
+  /* background-image: url(./img/contact1.jpg); */
   background-size: contain;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
   flex-wrap: wrap;
+  box-shadow: none;
+  
 }
 
 #contact .left-contact .left-img {
@@ -85,6 +88,7 @@
   font-weight: bold;
   text-align: center;
   font-size: 1.53em;
+  color: #89abe3;
 }
 
 #contact h1 {
