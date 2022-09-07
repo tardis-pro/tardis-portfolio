@@ -1,4 +1,4 @@
-.container {
+/* .container {
   min-height: 100vh;
   width: 100vw;
   display: flex;
@@ -6,9 +6,9 @@
   justify-content: center;
   place-content: top;
   flex-wrap: wrap;
-  overflow: hidden;
+  overflow: hidden; */
   
-}
+
 #project {
   background: linear-gradient(rgba(27, 1, 1, 0.623), rgba(0, 0, 0, 0.5)),
     url(./img/img32.jpg);
@@ -20,6 +20,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  align-items: flex-start;
   max-width: 3000px;
   margin-top: 0px;
   padding: 10px;
@@ -50,25 +51,25 @@
 #project .project-bottom {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content:space-evenly;
   flex-wrap: wrap;
 }
 
 #project .project-item {
-  flex-basis: 30%;
+  flex-basis: 22%;
   display: flex;
-  width: 100%;
+  width: auto;
   left: -10px;
   /* align-items: flex-start; */
-  justify-content: center;
-  align-content: center;
+  justify-content: space-evenly;
+  text-align: top;
   flex-direction: row;
-  padding: 18px;
-  border-radius: 10px;
+  padding: 10px;
+  border-radius: 10%;
   /* background-image: url(./img/img41.jpg); */
   /* background-size: contain;
   background-repeat: no-repeat; */
-  margin: 50px;
+  margin:10px;
   float:left;
   position: relative;
   z-index: 1;
@@ -82,8 +83,8 @@
   top: 0;
   height: 100%;
   width: 100%;
-  /* background-image: linear-gradient(80deg, #132840 0%, #a9cef5 100%) ; */
-  opacity: 0.4;
+  background-image: linear-gradient(80deg, #1111117c 0%, #f3f5f62f 100%) ;
+  opacity: 0.8;
   z-index: -1;
 }
 
@@ -93,6 +94,8 @@
   margin-top: -40px;
   object-position: center;
   position: relative;
+  display: inline-block;
+  
 }
 
 .project-item .picon img {
@@ -103,30 +106,33 @@
 }
 
 .pdesc h2 {
-  color: rgba(55, 63, 94, 0.563);
+  color: rgba(158, 158, 159, 0.711);
   font-size: 4.33rem;
   position: relative;
-  display: block;
+  display: inline-block;
   width: auto;
   /* width: 250px; */
   font-weight: 600;
   margin-top: 12px;
   text-align: center;
+  place-content: center;
 }
 
 .pdesc p {
-  color: whitesmoke;
-  font-size: 1.53rem;
+  color: rgba(164, 233, 232, 0.833) ;
+  font-size: 1.43rem;
   animation-delay: 1.5s;
   position: relative;
-  display: block;
+  display: inline-block;
   width: 100%;
   margin-top: 15px;
   font-weight: 600;
   line-height: 25px;
+  justify-self: stretch;
+  text-shadow: rgba(13, 13, 14, 0.762);
 }
 
-@media only screen and (min-width: 300px) {
+@media only screen and (max-width: 300px) {
   #project .project-bottom .project-item {
     flex-basis: 10%;
     margin: 2.5%;

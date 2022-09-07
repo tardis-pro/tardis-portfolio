@@ -34,8 +34,8 @@
   overflow: hidden;
 }
 
-.container h2 {
-  color: grey;
+ h2 {
+  color: rgb(161, 160, 160);
   width: fit-content;
   font-size: 4.33rem;
   animation-delay: 1.5s;
@@ -43,7 +43,7 @@
   display: block;
 }
 
-.container h2:hover {
+ h2:hover {
   color: #ffff;
   text-shadow: black;
 }

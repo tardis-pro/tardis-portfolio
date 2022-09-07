@@ -209,7 +209,7 @@
   -ms-transition: all 250ms ease;
   -o-transition: all 250ms ease;
   transition: all 250ms ease;
-  color: #5e5e5e;
+  color: #f6f2f2;
   text-indent: 15%;
 }
 .input_wrapper input[type="text"]:focus {
