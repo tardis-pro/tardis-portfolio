@@ -3,52 +3,52 @@
   width: 100vw;
   display: flex;
   align-items: center;
+  
   justify-content: center;
   place-content: top;
   flex-wrap: wrap;
   overflow: hidden;
-  
+  flex-direction: column;
 }
 #main {
-    display: inline-block;
-    background-image: url(./img/img23.png);
-    background-size: cover;
-    background-position: top-center;
-    background-attachment: fixed;
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
-    margin-top: -63px;
+  display: inline-block;
+  background-image: url(./img/img23.png);
+  background-size: cover;
+  background-position: top-center;
+  background-attachment: fixed;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  margin-top: -63px;
+}
 
-  }
-  
-  #main::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: whitesmoke;
-    opacity: 0.1;
-    overflow: hidden;
-  }
-  
-  .container h2 {
-    color: grey;
-    width: fit-content;
-    font-size: 4.33rem;
-    animation-delay: 1.5s;
-    position: relative;
-    display: block;
-  }
-  
-  .container h2:hover {
-    color: #ffff;
-    text-shadow: black;
-  }
-  
-  #main container h2 span {
+#main::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: whitesmoke;
+  opacity: 0.1;
+  overflow: hidden;
+}
+
+.container h2 {
+  color: grey;
+  width: fit-content;
+  font-size: 4.33rem;
+  animation-delay: 1.5s;
+  position: relative;
+  display: block;
+}
+
+.container h2:hover {
+  color: #ffff;
+  text-shadow: black;
+}
+
+/* #main container h2 span {
     background-color: rgba(38, 35, 75, 0.173);
     animation-delay: 1s;
     height: 100%;
@@ -56,9 +56,9 @@
     top: 0%;
     left: 0%;
     position: absolute;
-  }
-  
-  /* .container h4{
+  } */
+
+/* .container h4{
       color: slategrey ;
       font-size: 1.88rem;
       text-align: center;
@@ -67,25 +67,113 @@
       font-weight: 900;
   
   } */
-  
-  .wavy {
-    -webkit-box-reflect: below -15px linear-gradient(transparent, rgba(246, 242, 242, 0.376));
-    font-size: 30px;
-    text-align: center;
+
+.wavy {
+  -webkit-box-reflect: below -15px linear-gradient(transparent, rgba(246, 242, 242, 0.376));
+  font-size: 30px;
+  text-align: center;
+}
+.wavy span {
+  font-family: "PT Sans", sans-serif;
+  position: static;
+  display: inline-block;
+  color: rgba(249, 245, 245, 0.99);
+  text-transform: uppercase;
+  animation: wavy 1s infinite;
+  animation-delay: calc(0.1s * var(i));
+  letter-spacing: 20px;
+  word-spacing: 50px;
+}
+
+.wavy {
+  /* text-align: center;
+  background: linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+  color: #555;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 32px;
+  padding-top: 40vh;
+  height: 100vh; */
+  overflow: hidden;
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: 25px;
+  word-spacing: 50px;
+  font-weight: bold;
+  color: rgb(245, 244, 248);
+  font-family: "PT Sans", sans-serif;
+   }
+
+.first-of-type {
+  animation: showup 7s infinite;
+}
+
+.last-of-type {
+  width: 0px;
+  animation: reveal 7s infinite;
+}
+
+.last-of-type span {
+  margin-left: -355px;
+  animation: slidein 7s infinite;
+  font-weight: bold;
+  color: rgb(245, 244, 248);
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
   }
-  .wavy span {
-    font-family: "PT Sans", sans-serif;
-    position: static;
-    display: inline-block;
-    color: rgba(249, 245, 245, 0.99);
-    text-transform: uppercase;
-    animation: wavy 1s infinite;
-    animation-delay: calc(0.1s * var(--i));
-    letter-spacing: 20px;
-    word-spacing: 50px;
+  20% {
+    opacity: 1;
   }
-  /* keyframes */
-  @keyframes wavy {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 0;
+    width: 0px;
+  }
+  30% {
+    width: 355px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 355px;
+  }
+}
+
+/* keyframes */
+/* @keyframes wavy {
     0%,
     40%,
     100% {
@@ -94,5 +182,4 @@
     20% {
       transform: translateY(-20px);
     }
-  }
-  
+  } */

@@ -30,9 +30,9 @@ const Navlink = () => {
                 <li>
                   <a href="#"> Projects </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#"> Discover</a>
-                </li>
+                </li> */}
                 <li>
                   <a href="#">Contact </a>
                 </li>
