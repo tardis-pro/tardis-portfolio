@@ -42,9 +42,9 @@
   justify-content: center ;
 }
 
-#service .section-title span {
-  color: blue;
-}
+/* #service .section-title span {
+  color: red;
+} */
 
 #service .service-top p {
   font-size: 2rem;
