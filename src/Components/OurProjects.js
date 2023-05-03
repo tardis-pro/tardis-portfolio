@@ -20,9 +20,9 @@ const OurProjects = () => {
                   <img src={app} alt="app" />;
                 </div>
                 <div className="pdesc">
-                  <h2>Project#1</h2>
+                  <h2><b style={{ fontSize: "20px" }}> NPhub</b> <br /></h2>
                   <p>
-                    <b style={{ fontSize: "20px" }}> NPhub</b> <br />
+                    
                     Technologies used - Angular,Node, Mongo <br /> Project
                     Description: Find the perfect preceptor &amp; speed through
                     your paperwork process. <br /> • Developed UI screens from
@@ -38,9 +38,9 @@ const OurProjects = () => {
                   <img src={app} alt="app" />;
                 </div>
                 <div className="pdesc">
-                  <h2>Project#2</h2>
+                  <h2><b style={{ fontSize: "20px" }}> Welgo</b> <br /></h2>
                   <p>
-                    <b style={{ fontSize: "20px" }}> Welgo</b> <br />
+                    
                     Technologies - Python,Django, AngularJs,NodeJS <br />{" "}
                     Project Description: Welgo's pharmaceutical dispensing
                     system allow physicians to dispense prescriptions in-house,
@@ -60,9 +60,9 @@ const OurProjects = () => {
                   <img src={app} alt="app" />;
                 </div>
                 <div className="pdesc">
-                  <h2>Project#3</h2>
+                  <h2><b style={{ fontSize: "20px" }}> Measure </b> <br /></h2>
                   <p>
-                    <b style={{ fontSize: "20px" }}> Measure </b> <br />
+                    
                     Technologies - NodeJS, React, Python, Postgis.
                     Cloudformation, AWS <br /> Project Description: Everything
                     you need to automate your operations, fly safely, and
@@ -83,9 +83,9 @@ const OurProjects = () => {
                   <img src={app} alt="app" />;
                 </div>
                 <div className="pdesc">
-                  <h2>Project#4</h2>
+                  <h2><b style={{ fontSize: "20px" }}> Geospoc </b> <br /></h2>
                   <p>
-                    <b style={{ fontSize: "20px" }}> Geospoc </b> <br />• Worked
+                    • Worked
                     on different stacks around cloud computing. <br />• Designed and
                     developed various enterprise grade solutions <br />• Contributed
                     to inhouse built SaaS and Paas platforms.<br /> • Started as an
