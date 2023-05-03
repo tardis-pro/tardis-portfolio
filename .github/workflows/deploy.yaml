@@ -9,4 +9,3 @@ jobs:
     steps:
     - id: build-publish
       uses: bitovi/github-actions-react-to-ghp@v1.1.1
-        path: dist
