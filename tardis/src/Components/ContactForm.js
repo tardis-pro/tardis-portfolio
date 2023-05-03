@@ -6,10 +6,10 @@ const ContactForm = () => {
     <>
       <section id="contact">
         {/* <!-- <div className="contact container"> --> */}
-        <div className="left-contact">
+        <div className="left">
           <div className="left-img"></div>
         </div>
-        <div className="right-contact">
+        <div className="right">
           <div className="contact-item">
             <div className="sectionheader">
               <h1>CONTACT US</h1>

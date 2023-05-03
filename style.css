@@ -8,9 +8,13 @@
   box-sizing: border-box;
   }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #FCF6F5FF ;  
-  overflow-x: hidden; 
+  /* overflow-x: hidden;  */
 
 }
 
@@ -399,12 +403,10 @@ display: flex;
   text-align: center;
   max-width: 2000px;
   margin-top: 10px;
-  padding: 50px 10px;
 }
  
 #project .project-top {
 width: 100%;
-margin: 10px; 
 }
 
 
@@ -476,6 +478,110 @@ flex-wrap: wrap;
 
  }
 
+/* About Us and Goal */
+
+#aboutus{
+  background:  
+  linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url(./img/img32.jpg);
+  background-size: cover;
+  background-attachment: scroll;
+
+}
+#aboutus{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+}
+ 
+#aboutus .aboutus-top {
+width: 100%;
+margin: 10px; 
+}
+
+
+#aboutus .aboutus-title{
+  font-size: 4.33rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: top;
+  justify-content: center;
+}
+
+#aboutus .aboutus-title span{
+color: blue;
+}
+
+#aboutus .aboutus-bottom {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+
+#aboutus .aboutus-item {
+flex-basis: 50%;
+display: flex;
+align-items: flex-start;
+justify-content: center;
+flex-direction: row;
+padding: 20px;
+border-radius: 10px;
+background-image: url(./img/img41.jpg);
+background-size: cover;
+margin: 0px ;
+position: relative;
+z-index:1;
+flex-wrap: wrap;
+}
+
+#aboutus .aboutus-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width:100%;
+  /* background-image: linear-gradient(80deg, #132840 0%, #a9cef5 100%) ; */
+  opacity: 0.9;
+  z-index: -1;
+ }
+ 
+ .aboutus-item .picon {
+   height: 30px;
+   width: auto;
+   margin: 10px;
+   object-position: center;  
+   position: absolute;
+ 
+ }
+
+ .aboutus-item .picon img {
+  height: 100%;
+  width:100%;
+  margin: 5px;
+  object-fit: cover
+
+ }
+
+.describe{
+  font-size: 2.33rem;
+  color: #fff;
+}
+
+.framecaption{
+  font-size: 1.5rem;
+  color: #fff;
+}
+
  .pdesc h2{
   color: rgba(55, 63, 94, 0.563) ;
     font-size: 4.33rem;
@@ -537,13 +643,38 @@ form{
   grid-row: auto;
   grid-row-start: auto;
 } */
+.content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.left-frame{
+  width: 50%;
+  height: 100%;
+  margin-right: auto;
+  margin-left: 100px;
+  margin-bottom: 100px;
+}
+
+.right-frame{
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+iframe{
+  border-radius: 20px;
+}
 
 #contact{
   display: flex;
   flex-direction: row;
 }
 
-#contact .left-contact{
+#contact .left{
   width: 50%;
   margin: 10px;
   min-height: 700px;
@@ -558,7 +689,7 @@ form{
     flex-wrap: wrap;
   }
 
-  #contact .left-contact .left-img{
+  #contact .left .left-img{
     width: 100%;
     margin:10px;
     position: relative;
@@ -567,7 +698,7 @@ form{
     background-position: top-center;
   }
 
- #contact .right-contact{
+ #contact .right{
   width: 50%;
   margin: 20px;
   margin-right: 50px;
@@ -598,14 +729,14 @@ form{
     justify-content: right;
     align-items: right;
   } */
-  /* #contact .left-contact{
+  /* #contact .left{
     max-width: 100px;
     justify-content: left;
 
     /* position: relative; */
   
 
-  /* .left-contact .left-img{
+  /* .left .left-img{
     height: 20%;
     width: 20%;
     position: relative;
@@ -633,7 +764,6 @@ form{
   position: relative;
   text-align: center;
   letter-spacing: 1px;
-  ;
   }
   .contactbutton {
     background: #195190ff;
@@ -724,7 +854,7 @@ form{
   transition: all 250ms ease;
   color: #5E5E5E;
   }
-  .input_wrapper input[type="text"] {
+  .input_wrapper input[type="text"], input[type="email"] {
   margin-top: 2em;
   display: block;
   width: 100%;
@@ -743,7 +873,7 @@ form{
   color: #5E5E5E;
   text-indent: 15%;
   }
-  .input_wrapper input[type="text"]:focus {
+  .input_wrapper input[type="text"], input[type="email"]:focus {
   background: rgba(242, 56, 90, 0.05);
   box-shadow: inset 2px 2px 5px 0 #DADADA;
   outline: none;
@@ -771,7 +901,7 @@ form{
   -o-transition: all 250ms ease;
   transition: all 250ms ease;
   }
-  .input_wrapper input[type="text"]:focus + label {
+  .input_wrapper input[type="text"], input[type="email"]:focus + label {
   left: 85%;
   }
   .textarea_wrapper textarea {
