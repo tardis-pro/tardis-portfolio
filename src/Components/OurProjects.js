@@ -22,14 +22,14 @@ const OurProjects = () => {
                 <div className="pdesc">
                   <h2><b style={{ fontSize: "20px" }}> NPhub</b> <br /></h2>
                   <p>
-                    
-                    Technologies used - Angular,Node, Mongo <br /> Project
+                    Project
                     Description: Find the perfect preceptor &amp; speed through
                     your paperwork process. <br /> • Developed UI screens from
                     mockups provided. <br />• Created and integrated APIs with
                     frontend.
                     <br /> • Interfaced with different 3rd party services such
                     as Stripe, PandaDocs.
+                    Technologies used - Angular,Node, Mongo <br />
                   </p>
                 </div>
               </div>
@@ -41,7 +41,6 @@ const OurProjects = () => {
                   <h2><b style={{ fontSize: "20px" }}> Welgo</b> <br /></h2>
                   <p>
                     
-                    Technologies - Python,Django, AngularJs,NodeJS <br />{" "}
                     Project Description: Welgo's pharmaceutical dispensing
                     system allow physicians to dispense prescriptions in-house,
                     leading to increased patient compliance and satisfaction.{" "}
@@ -52,6 +51,7 @@ const OurProjects = () => {
                     Websockets for real time notifications. <br /> • Worked with
                     AngularJs to develop reusable components used across the
                     product.
+                    Technologies - Python,Django, AngularJs,NodeJS <br />{" "}
                   </p>
                 </div>
               </div>
@@ -62,9 +62,7 @@ const OurProjects = () => {
                 <div className="pdesc">
                   <h2><b style={{ fontSize: "20px" }}> Measure </b> <br /></h2>
                   <p>
-                    
-                    Technologies - NodeJS, React, Python, Postgis.
-                    Cloudformation, AWS <br /> Project Description: Everything
+                    Everything
                     you need to automate your operations, fly safely, and
                     analyze your data with the power of Pix4D. <br />• Worked on
                     different ETL workflows.
@@ -75,6 +73,8 @@ const OurProjects = () => {
                     pipelines for each component in the stack. <br />• Worked
                     with different satellite/drone imagery datasets for
                     historical data and predictive analysis.
+                    Technologies - NodeJS, React, Python, Postgis.
+                    Cloudformation, AWS
                   </p>
                 </div>
               </div>
