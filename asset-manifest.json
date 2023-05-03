@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/tardis-portfolio/static/css/main.6247d495.css",
+    "main.js": "/tardis-portfolio/static/js/main.6822213f.js",
+    "static/media/img23.png": "/tardis-portfolio/static/media/img23.35c5d53899c8712843f2.png",
+    "static/media/img4.jpg": "/tardis-portfolio/static/media/img4.6ce93abbdb5cef7e905c.jpg",
+    "static/media/img32.jpg": "/tardis-portfolio/static/media/img32.3b43cf8b2d0332363484.jpg",
+    "static/media/img34.jpg": "/tardis-portfolio/static/media/img34.f32c22a99435a71610a3.jpg",
+    "static/media/contact1.jpg": "/tardis-portfolio/static/media/contact1.f92e32b21c9801d0d7ba.jpg",
+    "static/media/consultant.png": "/tardis-portfolio/static/media/consultant.ad02d63870968fd4d1e7.png",
+    "static/media/web.png": "/tardis-portfolio/static/media/web.ffa3e0dd754dc923e50b.png",
+    "index.html": "/tardis-portfolio/index.html",
+    "main.6247d495.css.map": "/tardis-portfolio/static/css/main.6247d495.css.map",
+    "main.6822213f.js.map": "/tardis-portfolio/static/js/main.6822213f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6247d495.css",
+    "static/js/main.6822213f.js"
+  ]
+}
