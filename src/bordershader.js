@@ -39,21 +39,30 @@ export const materialBorderGen = (geom) => {
             value: new THREE.Color('skyblue')
         }
     };
-    const canvas = document.createElement('canvas');
-    canvas.width = 128;
-    canvas.height = 128;
+    function createGrid(images) {
+        const canvas = document.createElement('canvas');
+        canvas.width = 512;
+        canvas.height = 512;
 
-    const context = canvas.getContext('2d');
-    const gradient = context.createRadialGradient( canvas.width / 2, canvas.height / 2, 0, canvas.width / 2, canvas.height / 2, canvas.width / 2 );
-    gradient.addColorStop(0.1, 'rgba(0,59,111,1)');
-    // gradient.addColorStop(0.25, 'rgba(0,59,111,0.5)');
+        const context = canvas.getContext('2d');
+        const loadedImages = [];
 
-    gradient.addColorStop(1, 'rgba(0,59,111,1)');
-
-
-    context.fillStyle = gradient;
-    context.fillRect(0, 0,  canvas.width, canvas.height);
-    const shadowTexture = new THREE.CanvasTexture( canvas );
+        let imagesLoadedCount = 0;
+        images.forEach((imageUrl, index) => {
+            const image = new Image();
+            
+            const gridSize = canvas.width / Math.sqrt(images.length);
+            const row = Math.floor(index / Math.sqrt(images.length));
+            const col = index % Math.sqrt(images.length);
+            image.src = imageUrl;
+            image.onload = function () {
+                // Keep track of the loaded images count
+                imagesLoadedCount++;
+                context.drawImage(image, col * gridSize, row * gridSize, gridSize, gridSize);
+            };
+        });
+    }
+    const shadowTexture = new THREE.CanvasTexture(canvas);
     if (geom) {
         // uniforms.lightmap = {
         //     lightMap: geom.attributes.normal,
