@@ -16,7 +16,7 @@ export default function App() {
         cursor={false}
       > */}
       <OrbitControls/>
-        <Stage adjustCamera={2} intensity={0} castShadow={true} >
+        <Stage adjustCamera={2} intensity={0} castShadow={true} environment={null} >
           <Model/>
         </Stage>
         <pointLight position={[0, 0, 5]} intensity={0.65}/>
